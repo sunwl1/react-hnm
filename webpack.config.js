@@ -20,6 +20,12 @@ module.exports = {
 	// 단, 이거 설정하면 webpack-dev-server 3번대 버전에서 live reloading 동작 안함
 	// target: ['web', 'es5'],
 	devServer: {
+		proxy: {
+            '/api': {
+            target: 'https://hnm-express-project.herokuapp.com/',
+            changeOrigin: true,
+            }
+        },
 		liveReload: true
 	},
 	optimization: {
