@@ -3,6 +3,10 @@ const webpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
  
 module.exports = {
+ 
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     
     entry: {
         app: ['./src/index.jsx']
