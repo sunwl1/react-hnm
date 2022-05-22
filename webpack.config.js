@@ -4,10 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
  
 module.exports = {
  
-    name: 'react-project',
-    
-    mode: 'development',
- 
     resolve: {
         extensions: ['.js', '.jsx']
     },
