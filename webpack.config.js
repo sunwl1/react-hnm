@@ -51,4 +51,10 @@ module.exports = {
         new webpackPlugin(),
         new MiniCssExtractPlugin({ filename: 'style.css' }) 
     ],
+ 
+    output: {
+        path: path.join(__dirname, 'dist'),
+        filename: 'bundle.js',
+        publicPath: '/dist'
+    },
 }
