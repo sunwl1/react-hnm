@@ -17,14 +17,6 @@ module.exports = {
         publicPath: '/dist'
     },
     
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compressor: {
-                warnings: false,
-            }
-        }),
-        new webpack.optimize.OccurenceOrderPlugin()
-    ],
 
     module: {
             loaders: [
