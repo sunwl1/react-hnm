@@ -4,7 +4,15 @@ const textSign = new TextSign();
 
 const condition = true;
 // const condition = false;
-
+const add = async() => {
+    // delete 버튼 를릭 시 실행
+    try{
+        // axios.get 은 두번째 매개변수로 config 전달
+        const res = await axios.post('/api/add')
+    } catch(e) {
+        console.error(e.message)
+    }
+}
 const promise = new Promise((resolve, reject) => {
 	if (condition) {
 		resolve('성공!');
@@ -15,7 +23,9 @@ const promise = new Promise((resolve, reject) => {
 promise
 	.then(message => {
 		console.log(message);
-		textSign.elem.innerHTML = message;
+		let button = document.createElement('div');
+		button.addEventListener('Click',add)
+		textSign.elem.innerHTML = message + button;
 		textSign.elem.dataset.state = 'success';
 	})
 	.catch(error => {
