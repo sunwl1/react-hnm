@@ -24,7 +24,9 @@ promise
 	.then(message => {
 		console.log(message);
 		let button = document.createElement('div');
-		button.addEventListener('onClick',add)
+		button.addEventListener('click',function(){
+			add();
+		})
 		textSign.elem.innerHTML = message + button;
 		textSign.elem.appendChild(button);
 		textSign.elem.dataset.state = 'success';
