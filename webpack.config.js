@@ -56,10 +56,11 @@ module.exports = {
         new MiniCssExtractPlugin({ filename: 'style.css' }) 
     ],
  
-	output: {
-		path: path.resolve('./dist'),
-		filename: '[name].min.js'
-	},
+    output: {
+        path: path.join(__dirname, 'dist'),
+        filename: 'bundle.js',
+        publicPath: '/dist'
+    },
  
     devServer: {
         proxy: {
