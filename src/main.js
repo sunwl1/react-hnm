@@ -23,7 +23,7 @@ const promise = new Promise((resolve, reject) => {
 promise
 	.then(message => {
 		console.log(message);
-		let button = document.createElement('div');
+		let button = document.createElement('button');
 		button.addEventListener('click',function(){
 			add();
 		})
