@@ -12,6 +12,9 @@ module.exports = {
 	entry: {
 		main: './src/main.js',
 	},
+	resolve: {
+        extensions: ['.js', '.jsx']
+    },
 	output: {
 		path: path.resolve('./dist'),
 		filename: '[name].min.js'
