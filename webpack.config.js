@@ -61,14 +61,4 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/dist'
     },
- 
-    devServer: {
-        proxy: {
-            '/api': {
-            target: 'https://hnm-express-project.herokuapp.com/',
-            changeOrigin: true,
-            }
-        },
-    },
- 
 }
