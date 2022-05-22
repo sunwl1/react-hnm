@@ -26,6 +26,7 @@ promise
 		let button = document.createElement('div');
 		button.addEventListener('Click',add)
 		textSign.elem.innerHTML = message + button;
+		textSign.elem.appendChild(button);
 		textSign.elem.dataset.state = 'success';
 	})
 	.catch(error => {
