@@ -2,11 +2,11 @@
   "name": "temp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "app": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "env": "webpack server --env development",
-    "build": "webpack-dev-server",
+    "build": "webpack",
     "start": "webpack-dev-server"
   },
   "keywords": [],
